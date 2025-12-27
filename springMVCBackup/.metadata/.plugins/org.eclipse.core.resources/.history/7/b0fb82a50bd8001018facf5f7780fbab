@@ -1,0 +1,5 @@
+package com.aman.config;
+
+public class WebConfig {
+
+}

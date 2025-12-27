@@ -1,0 +1,21 @@
+package com.project1.config;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.project1.Dto.studentDto;
+
+public class configurationC {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("dataConfig.xml");
+		studentDto s = ctx.getBean("student" , studentDto.class);
+		System.out.println(s);
+		
+		studentDto s2 = ctx.getBean("student2" , studentDto.class);
+		s2.setName("amit");
+		s2.setRoleN0(46464);
+		s2.setAddress("USA");
+		System.out.println(s2);
+	}
+}

@@ -1,0 +1,7 @@
+package com.aman.ctl;
+
+import org.springframework.web.servlet.HandlerInterceptor;
+
+public class FrontCtl  implements HandlerInterceptor{
+
+}

@@ -1,0 +1,10 @@
+package com.project1.Dto;
+
+public class studentDto {
+
+	String name;
+	int roleN0;
+	String address;
+	
+	
+}

@@ -1,0 +1,23 @@
+package com.aman.config;
+
+import org.springframework.context.annotation.Conditional;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import com.aman.ctl.FrontCtl;
+
+@EnableWebMvc
+@Configuration
+public class WebConfig  implements WebMvcConfigurer{
+
+	
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		// TODO Auto-generated method stub
+		registry.addInterceptor(new FrontCtl()).addPathPatterns("/");
+	}
+	
+	
+}

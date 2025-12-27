@@ -1,0 +1,8 @@
+package com.aman;
+
+import org.springframework.web.servlet.ViewResolver;
+
+public class Controller {
+
+	ViewResolver
+}
